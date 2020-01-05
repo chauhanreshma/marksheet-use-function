@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+</head>
+
+<body>
+
+	<script>
+		marksheet();
+
+
+		function marksheet() {
+			name = prompt("Enter Your Name");
+			Enrollment_No = prompt("Enter Your Enrollment_no");
+			getInput();
+
+		}
+
+		function getInput() {
+			English = parseInt(prompt("Enter the English mark"));
+			Maths = parseInt(prompt("Enter the Maths mark"));
+			PHP = parseInt(prompt("Enter the PHP mark"));
+			Webdesign = parseInt(prompt("Enter the Webdesign mark"));
+			Java = parseInt(prompt("Enter the Java mark"));
+			total = English + Maths + PHP + Webdesign + Java;
+			avg = total / 5;
+			result(English, Maths, PHP, Webdesign, Java, total, avg);
+		}
+
+
+
+		function result(English, Maths, PHP, Webdesign, Java, total, avg) {
+			alert("name:  " + name + "\n Enrollment_No:  " + Enrollment_No + "\nEnglish:  " + English + "\n Maths: " + Maths + "\n php" + PHP + "\Webdesign:  " + Webdesign + "\n Java:  " + Java + "\n Total:  " + total + "\n avg:  " + avg + "%");
+		}
+
+	</script>
+
+
+
+
+
+</body>
+
+</html>
